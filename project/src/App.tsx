@@ -1,10 +1,12 @@
-import { Button } from "./components/ui/button"
+
+import { BrowserRouter  as Router ,Routes,Route } from "react-router-dom"
 const App = () => {
   return (
-    <div className="text-blue-800">
-      <Button>Click me</Button>
-      
-    </div>
+    <Router>
+      <Routes>
+        <Route></Route>
+      </Routes>
+    </Router>
   )
 }
 
