@@ -9,6 +9,7 @@ const PublicLayout = () => {
       <Outlet/>
       <Footer/>
       
+      
     </div>
   )
 }
