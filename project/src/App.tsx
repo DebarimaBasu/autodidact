@@ -1,10 +1,12 @@
 
 import { BrowserRouter  as Router ,Routes,Route } from "react-router-dom"
-import PublicLayout from "./layouts/PublicLayout"
+import { MainLayout } from "./layouts/MainLayout"
+import { PublicLayout } from "./layouts/PublicLayout"
 import Home from "./routes/Home"
 import AuthLayout from "./layouts/AuthLayout"
 import SignInPage from "./routes/SignInPage"
 import SignUpPage from "./routes/SignUpPage"
+import ProtectRoutes from "./layouts/ProtectRoutes"
 const App = () => {
   return (
     <Router>
@@ -21,6 +23,8 @@ const App = () => {
         </Route>
 
         {/* protected layout*/ }
+        <Route element={<ProtectRoutes> <MainLayout/></ProtectRoutes>}>
+        </Route>
       
       </Routes>
     </Router>
