@@ -31,7 +31,7 @@ import {
                 className={({ isActive }) =>
                   cn(
                     "text-base text-neutral-100 ",
-                    isActive && "text-neutral-100 font-semibold"
+                    isActive && "text-neutral-300 font-semibold"
                   )
                 }
               >
