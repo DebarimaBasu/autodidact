@@ -57,4 +57,11 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+  .text-outline {
+    color: white;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6),
+      /* Top-left */ 1px -1px 0 rgba(0, 0, 0, 0.6),
+      /* Top-right */ -1px 1px 0 rgba(0, 0, 0, 0.6),
+      /* Bottom-left */ 1px 1px 0 rgba(0, 0, 0, 0.6); /* Bottom-right */
+  }
 }
