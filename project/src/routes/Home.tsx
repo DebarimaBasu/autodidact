@@ -13,8 +13,8 @@ const Home = () => {
     <Container>
       <div className="my-8">
         <h2 className="text-3xl text-center md:text-left md:text-6xl text-gray-500">
-          <span className=" text-outline font-extrabold md:text-8xl">
-            AI Superpower
+          <span className=" text-outline font-extrabold md:text-7xl">
+           Autodidact -AI superpower
           </span>
           <span className="text-gray-400 font-extrabold">
             - A better way to  improve your interview chances and skills
@@ -82,7 +82,7 @@ const Home = () => {
             <img
               src="/assets/img/office1.jpg"
               alt=""
-              className="w-full max-h-70 rounded-md object-cover"
+              className="w-full max-h-80 rounded-md object-cover"
             />
           </div>
 
