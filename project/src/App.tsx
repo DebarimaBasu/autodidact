@@ -7,6 +7,9 @@ import AuthLayout from "./layouts/AuthLayout"
 import SignInPage from "./routes/SignInPage"
 import SignUpPage from "./routes/SignUpPage"
 import ProtectRoutes from "./layouts/ProtectRoutes"
+import { Generate } from "./components/generate"
+import {Dashboard} from "./routes/dashboard"
+import { CreateEditPage } from "./routes/CreateEditPage"
 const App = () => {
   return (
     <Router>
@@ -27,9 +30,19 @@ const App = () => {
          element={
          <ProtectRoutes> 
           <MainLayout/>
-          </ProtectRoutes>}>
+          </ProtectRoutes>
+        }
+        >
+          {/* protected routes */}
+          <Route element={<Generate/>} path="/generate">
+            <Route index element={<Dashboard/>}/>
+            <Route path="interviewId" element={<CreateEditPage/>}/>
+
+          </Route>
+
+
         </Route>
-      
+        
       </Routes>
     </Router>
   )
