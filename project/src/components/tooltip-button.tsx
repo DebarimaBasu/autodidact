@@ -42,7 +42,7 @@ import {
     return (
       <TooltipProvider delayDuration={delay}>
         <Tooltip>
-          <TooltipTrigger
+          <TooltipTrigger asChild
             className={disbaled ? "cursor-not-allowed" : "cursor-pointer"}
           >
             <Button
@@ -58,7 +58,7 @@ import {
                 icon
               )}
             </Button>
-          </TooltipTrigger>
+          </TooltipTrigger >
           <TooltipContent>
             <p>{loading ? "Loading..." : content}</p>
           </TooltipContent>
