@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 export const PublicLayout = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col h-screen">
       {/* handler to store the user data */}
       <AuthHandler/>
       <Header />

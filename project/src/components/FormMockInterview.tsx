@@ -173,7 +173,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
   }, [initialData, form]);
 
   return (
-    <div className="w-full flex-col space-y-4">
+    <div className="w-full flex-col space-y-4  ">
       <CustomBreadCrumb
         breadCrumbPage={breadCrumpPage}
         breadCrumpItems={[{ label: "Mock Interviews", link: "/generate" }]}
@@ -203,13 +203,13 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
             name="position"
             render={({ field }) => (
               <FormItem className="w-full space-y-4">
-                <div className="w-full flex items-center justify-between">
+                <div className="w-full flex items-center justify-between text-slate-50">
                   <FormLabel>Job Role / Job Position</FormLabel>
-                  <FormMessage className="text-sm" />
+                  <FormMessage className="text-sm " />
                 </div>
                 <FormControl>
                   <Input
-                    className="h-12"
+                    className="h-12 bg-green-50"
                     disabled={loading}
                     placeholder="eg:- Full Stack Developer"
                     {...field}
@@ -225,13 +225,13 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
             name="description"
             render={({ field }) => (
               <FormItem className="w-full space-y-4">
-                <div className="w-full flex items-center justify-between">
+                <div className="w-full flex items-center justify-between text-slate-50">
                   <FormLabel>Job Description</FormLabel>
                   <FormMessage className="text-sm" />
                 </div>
                 <FormControl>
                   <Textarea
-                    className="h-12"
+                    className="h-12 bg-green-50"
                     disabled={loading}
                     placeholder="eg:- describle your job role"
                     {...field}
@@ -247,14 +247,14 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
             name="experience"
             render={({ field }) => (
               <FormItem className="w-full space-y-4">
-                <div className="w-full flex items-center justify-between">
+                <div className="w-full flex items-center justify-between text-slate-50">
                   <FormLabel>Years of Experience</FormLabel>
                   <FormMessage className="text-sm" />
                 </div>
                 <FormControl>
                   <Input
                     type="number"
-                    className="h-12"
+                    className="h-12 bg-green-50"
                     disabled={loading}
                     placeholder="eg:- 5 Years"
                     {...field}
@@ -270,13 +270,13 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
             name="techStack"
             render={({ field }) => (
               <FormItem className="w-full space-y-4">
-                <div className="w-full flex items-center justify-between">
+                <div className="w-full flex items-center justify-between text-slate-50">
                   <FormLabel>Tech Stacks</FormLabel>
                   <FormMessage className="text-sm" />
                 </div>
                 <FormControl>
                   <Textarea
-                    className="h-12"
+                    className="h-12 bg-green-50"
                     disabled={loading}
                     placeholder="eg:- React, Typescript..."
                     {...field}

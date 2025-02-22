@@ -1,7 +1,7 @@
 
 
 import { Headings } from "@/components/headings";
-import { InterviewPin } from "@/components/pin";
+ import { InterviewPin } from "@/components/pin";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -53,10 +53,11 @@ export const Dashboard = () => {
 
   return (
     <>
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full items-center justify-between ">
         {/* headings */}
-        <Headings
+        <Headings  
           title="Dashboard"
+          
           description="Create and start you AI Mock interview"
         />
         <Link to={"/generate/create"}>
@@ -86,11 +87,11 @@ export const Dashboard = () => {
               alt=""
             />
 
-            <h2 className="text-lg font-semibold text-muted-foreground">
+            <h2 className="text-lg font-semibold text-muted-foreground mt-4">
               No Data Found
             </h2>
 
-            <p className="w-full md:w-96 text-center text-sm text-neutral-400 mt-4">
+            <p className="w-full md:w-96 text-center text-sm text-neutral-200 mt-4">
               There is no available data to show. Please add some new mock
               interviews
             </p>

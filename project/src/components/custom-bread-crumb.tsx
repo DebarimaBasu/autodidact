@@ -24,9 +24,9 @@ import {
           <BreadcrumbItem>
             <BreadcrumbLink
               href="/"
-              className="flex items-center justify-center hover:text-emerald-500"
+              className="flex items-center justify-center hover:text-emerald-500 text-red-50"
             >
-              <Home className="w-3 h-3 mr-2" />
+              <Home className="w-3 h-3 mr-2 text-red-100" />
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -34,20 +34,20 @@ import {
           {breadCrumpItems &&
             breadCrumpItems.map((item, i) => (
               <React.Fragment key={i}>
-                <BreadcrumbSeparator />
+                <BreadcrumbSeparator className="text-red-50"/>
                 <BreadcrumbItem>
-                  <BreadcrumbLink
+                  <BreadcrumbLink 
                     href={item.link}
-                    className="hover:text-emerald-500"
+                    className="hover:text-emerald-500 text-red-50"
                   >
                     {item.label}
                   </BreadcrumbLink>
                 </BreadcrumbItem>
               </React.Fragment>
             ))}
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>{breadCrumbPage}</BreadcrumbPage>
+          <BreadcrumbSeparator className="text-red-50"/>
+          <BreadcrumbItem >
+            <BreadcrumbPage className="text-red-100 font-semibold">{breadCrumbPage}</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>

@@ -34,12 +34,11 @@ const App = () => {
         }
         >
           {/* protected routes */}
-          <Route element={<Generate/>} path="/generate">
-            <Route index element={<Dashboard/>}/>
-            <Route path="interviewId" element={<CreateEditPage/>}/>
-
+          <Route element={<Generate />} path="/generate">
+            <Route index element={<Dashboard />} />
+            <Route path=":interviewId" element={<CreateEditPage />} />
           </Route>
-
+            
 
         </Route>
         

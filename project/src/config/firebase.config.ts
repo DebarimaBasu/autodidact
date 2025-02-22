@@ -1,5 +1,6 @@
 import { getApp, getApps, initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore} from "firebase/firestore";
+// import { getFirestore } from "firebase/firestore";
 
 
 
@@ -22,3 +23,22 @@ const db = getFirestore(app);
 
 
 export { db };
+
+
+
+
+
+
+// async function fetchData() {
+//   const querySnapshot = await getDocs(collection(db, "users"));
+//   querySnapshot.forEach((doc) => {
+//     console.log(doc.id, " => ", doc.data());
+//   });
+// }
+
+// fetchData();
+
+
+
+
+
