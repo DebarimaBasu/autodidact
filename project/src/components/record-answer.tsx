@@ -17,7 +17,7 @@ import WebCam from "react-webcam";
 import { TooltipButton } from "./tooltip-button";
 import { toast } from "sonner";
 import { chatSession } from "@/scripts";
-import { SaveModal } from "./save-modal";
+import { SaveModel } from "./saveModel";
 import {
   addDoc,
   collection,
@@ -210,7 +210,7 @@ export const RecordAnswer = ({
   return (
     <div className="w-full flex flex-col items-center gap-8 mt-4">
       {/* save modal */}
-      <SaveModal
+      <SaveModel
         isOpen={open}
         onClose={() => setOpen(false)}
         onConfirm={saveUserAnswer}
