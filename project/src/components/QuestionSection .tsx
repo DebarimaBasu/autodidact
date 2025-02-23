@@ -49,7 +49,7 @@ export const QuestionSection = ({ questions }: QuestionSectionProps) => {
           {questions?.map((tab, i) => (
             <TabsTrigger
               className={cn(
-                "data-[state=active]:bg-emerald-200 data-[state=active]:shadow-md text-xs px-2"
+                "data-[state=active]:bg-emerald-200 data-[state=active]:shadow-md text-xs px-2 text-yellow-50"
               )}
               key={tab.question}
               value={tab.question}
@@ -61,18 +61,18 @@ export const QuestionSection = ({ questions }: QuestionSectionProps) => {
 
         {questions?.map((tab, i) => (
           <TabsContent key={i} value={tab.question}>
-            <p className="text-base text-left tracking-wide text-neutral-500">
+            <p className="text-base text-left tracking-wide text-neutral-100">
               {tab.question}
             </p>
 
-            <div className="w-full flex items-center justify-end">
+            <div className="w-full flex items-center justify-end ">
               <TooltipButton
                 content={isPlaying ? "Stop" : "Start"}
                 icon={
                   isPlaying ? (
-                    <VolumeX className="min-w-5 min-h-5 text-muted-foreground" />
+                    <VolumeX className="min-w-5 min-h-5  text-gray-100" />
                   ) : (
-                    <Volume2 className="min-w-5 min-h-5 text-muted-foreground" />
+                    <Volume2 className="min-w-5 min-h-5 text-gray-300" />
                   )
                 }
                 onClick={() => handlePlayQuestion(tab.question)}

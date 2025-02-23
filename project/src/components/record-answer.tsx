@@ -217,7 +217,7 @@ export const RecordAnswer = ({
         loading={loading}
       />
 
-      <div className="w-full h-[400px] md:w-96 flex flex-col items-center justify-center border p-4 bg-gray-50 rounded-md">
+      <div className="w-full h-[400px] md:w-96 flex flex-col items-center justify-center border p-4 bg-green-100 rounded-md">
         {isWebCam ? (
           <WebCam
             onUserMedia={() => setIsWebCam(true)}
@@ -229,7 +229,7 @@ export const RecordAnswer = ({
         )}
       </div>
 
-      <div className="flex itece justify-center gap-3">
+      <div className="flex itece justify-center gap-3 text-green-100">
         <TooltipButton
           content={isWebCam ? "Turn Off" : "Turn On"}
           icon={
@@ -274,7 +274,7 @@ export const RecordAnswer = ({
         />
       </div>
 
-      <div className="w-full mt-4 p-4 border rounded-md bg-gray-50">
+      <div className="w-full mt-4 p-4 border rounded-md bg-green-100">
         <h2 className="text-lg font-semibold">Your Answer:</h2>
 
         <p className="text-sm mt-2 text-gray-700 whitespace-normal">

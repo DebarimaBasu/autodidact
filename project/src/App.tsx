@@ -12,13 +12,17 @@ import {Dashboard} from "./routes/dashboard"
 import { CreateEditPage } from "./routes/CreateEditPage"
 import { MockLoadPage } from "./routes/MockLoadPage"
 import { MockInterviewPage } from "./routes/MockInterviewPage"
+import { Feedback } from "./routes/Feedback"
+import Services from "./routes/services"
 const App = () => {
   return (
     <Router>
       <Routes>
-        {/*public routes */}
-        <Route element={<PublicLayout/>}>
-        <Route index element={<Home/>}/>
+        {/* public routes */}
+        <Route element={<PublicLayout />}>
+          <Route index element={<Home />} />
+          <Route index element={<Services/>} />
+          
         </Route>
 
          {/*public routes */}
@@ -44,6 +48,7 @@ const App = () => {
               path="interview/:interviewId/start"
               element={<MockInterviewPage />}
             />
+             <Route path="feedback/:interviewId" element={<Feedback />} />
           </Route>
             
 
