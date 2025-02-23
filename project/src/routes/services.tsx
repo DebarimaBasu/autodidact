@@ -2,8 +2,8 @@
 
 const Services = () => {
   return (
-    <div>
-      Kk;kfk
+    <div w-full >
+     
     </div>
   )
 }
