@@ -5,10 +5,7 @@ export const MainRoutes = [
       color:"text-white",
     },
     
-    {
-      label: "About Us",
-      href: "/about",
-    },
+    
     {
      
       label: "Services",
