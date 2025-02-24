@@ -35,8 +35,7 @@ const Home = () => {
 
         {/* image section */}
         <div className="w-full  mt-6 rounded-xl bg-gray-100 h-[620px] drop-shadow-md overflow-hidden relative">
-          <img
-            src="/assets/img/hero1.jpg"
+        <img src="/assets/img/hero1.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -56,6 +55,7 @@ const Home = () => {
           <MarqueImg img="/assets/img/logo/microsoft.png" />
           <MarqueImg img="/assets/img/logo/meet.png" />
           <MarqueImg img="/assets/img/logo/microsoft.png" />
+          <MarqueImg img="/assets/img/logo/zoom.png" />
         </Marquee>
       </div>
 
@@ -68,6 +68,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           <div className="col-span-1 md:col-span-3">
             <img
+              
               src="/assets/img/office1.jpg"
               alt=""
               className="w-full max-h-80 rounded-md object-cover"
