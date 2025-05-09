@@ -142,7 +142,7 @@ export const Feedback = () => {
             <AccordionItem
               key={feed.id}
               value={feed.id}
-              className="border rounded-lg shadow-md"
+              className="border rounded-lg shadow-md bg-red-300"
             >
               <AccordionTrigger
                 onClick={() => setActiveFeed(feed.id)}
